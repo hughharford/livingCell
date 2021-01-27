@@ -1,0 +1,17 @@
+###### build with:
+docker build -t dockerfile .
+
+###### run with:
+## docker run -it --rm --name ra [containerID] OR dockerfile:latest 
+docker run -it --rm --name ra dockerfile:latest 
+### THIS runs the container
+
+###### run the app from inside the container:
+java -cp 210125_grafana/target/210125_grafana-0.0.1-SNAPSHOT.jar com.posco.RunApp
+
+
+####### run app from outside the container:
+docker run -it --rm  dockerfile:latest
+# or
+docker run -it --name ra dockerfile:latest
+ 
