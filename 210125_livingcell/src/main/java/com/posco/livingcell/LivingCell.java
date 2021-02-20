@@ -106,7 +106,7 @@ public class LivingCell implements LCRangedTradingForCell {
 		lcTwo.runCellOperations(50);
 		
 		VisualiserFactory visualMachine = new VisualiserFactory();
-		VisualiserForCell cellOutput = visualMachine.getVisualiser("show");
+		VisualiserForCell cellOutput = visualMachine.getVisualiserL2("show");
 		cellOutput.printBasicCellData(lcTwo);
 
 
